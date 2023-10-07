@@ -1,0 +1,29 @@
+
+
+
+
+
+#topbar:hover {
+    background-color: #222b34;
+    border-radius: 2em;
+    box-shadow: 0px 0px 10px #565d6d;
+    background-image: linear-gradient(180deg, #202021, #6f7277);
+    box-shadow: 5px 5px 7px #202021;
+}
+
+
+
+.nav-item.active a.nav-link {
+    color: white;
+}
+
+
+
+
+
+
+
+.navbar.fixed-top {
+    right: 0;
+    left: auto;
+}

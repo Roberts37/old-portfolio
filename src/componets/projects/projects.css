@@ -1,0 +1,24 @@
+#full {
+    background-color: #202021;
+    box-shadow: 0px 0px 10px #565d6d;
+}
+
+
+#project_desc {
+    border: 3px solid #565d6d;
+    box-shadow: 0px 0px 7px #565d6d;
+}
+
+button {
+    background-color: #565d6d;
+    color: white;
+    border-radius: 2em;
+    background-image: linear-gradient(180deg, #202021, #6f7277);
+    border:none;
+    box-shadow: 0px 0px 7px #565d6d;
+}
+
+button:hover{
+    background-image:linear-gradient(#474e5f,#9a9fa8) ;
+    box-shadow: 5px 5px 7px #565d6d;
+}

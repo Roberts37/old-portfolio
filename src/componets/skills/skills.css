@@ -1,0 +1,31 @@
+#image-icon {
+    height: 80px;
+    width: 80px;
+    margin:1%;
+    border-radius:50%;
+    background-color: #282c34;
+    box-shadow: 0px 0px 10px #676f83;
+
+}
+
+
+@media (max-width: 1400px) {
+    #image-icon {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+
+#b {
+  background-color: #202021;
+  box-shadow: 0px 0px 10px #565d6d;
+}
+
+/* 
+#343a40
+#343942
+#26211d
+#202021   1
+#121313   could be used within 1
+*/

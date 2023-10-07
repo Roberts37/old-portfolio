@@ -36,3 +36,181 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+.main {
+  position: relative;
+  height:100vh;
+  width:100vw;
+  background-size:100%;
+  background-color: #282c34;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+
+#title {
+  height:100vh;
+  width:100vw;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-image: url('bb.png');
+    background-size: cover;
+    opacity: 0.2;
+  }
+}
+
+
+
+
+
+/* #title {
+  background-color: #1d1f27;
+  &::before {
+    content: '';
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(binary.png);
+    background-position: top center;
+
+    
+    opacity: .2;
+}
+} */
+
+
+
+h5,h4,h3,ul,li,p {
+  color: white;
+
+}
+
+#hr {
+  color: white;
+}
+
+
+
+#first {
+  position: relative;
+  /* border-image: linear-gradient(to right, #f1f1ff, #31353f) 1;
+  border-left:3px solid #f1f1ff;
+  border-top: 3px solid #f1f1ff; */
+  /* margin:2.5% 2.5% 2.5% 2.5%; */
+  padding:2%;
+  width:40%;
+}
+
+
+@media screen and (max-width: 1400px) {
+  #first {
+    width: 80%;
+    height: 100%
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  #navigation {
+    display: none;
+    
+  }
+
+
+  #first {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
+
+
+#second {
+  position: relative;
+  /* border-image: linear-gradient(to left, #f1f1ff, #31353f) 1;
+  border-bottom: 1px solid #f1f1ff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:2.5% 10% 2.5% 2.5%;
+  padding:2%;
+  width:80%;
+
+}
+
+
+
+#pic {
+  position: relative;
+  /* margin:10%, 0 0 0 ; */
+  /* padding:2%; */
+  width:50%;
+}
+
+
+
+#third {
+  position: relative;
+  /* border-image: linear-gradient(to right, #f1f1ff, #31353f) 1;
+  border-top: 1px solid #f1f1ff; */
+  /* padding:0, 2%, 2%, 2%; */
+  width:50%;
+  
+
+}
+
+#fourth {
+  position: relative;
+  /* border-image: linear-gradient(to left, #f1f1ff, #31353f) 1;
+  border-right:3px solid #f1f1ff;
+  border-bottom: 3px solid #f1f1ff; */
+  /* padding:2%; */
+  width:50%;
+}
+
+#fifth {
+  position: relative;
+  width:50%;
+}
+
+
+#sixth {
+  position: relative;
+  width:50%;
+}
+
+#footer {
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 1400px) {
+  div#pic, div#third, div#fourth, div#fifth, div#sixth {
+    width: 70%;
+  }
+}
+
+
+
+@media screen and (max-width: 991px) {
+  div#pic, div#third, div#fourth, div#fifth, div#sixth {
+    width: 90%;
+  }
+}
