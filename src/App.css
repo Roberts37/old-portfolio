@@ -140,6 +140,30 @@ h5,h4,h3,ul,li,p {
 }
 
 
+@media screen and (max-height: 600px) {
+  #first {
+    height: 60%;
+    width:60%;
+  }
+}
+
+@media screen and (max-height: 600px) and (min-width: 1400px){
+  #first {
+    height: 20%;
+    width:30%;
+  }
+}
+
+
+@media screen and (max-height: 500px){
+  #first {
+    height: 20%;
+    width:50%;
+  }
+}
+
+
+
 
 
 #second {
@@ -214,3 +238,18 @@ h5,h4,h3,ul,li,p {
     width: 90%;
   }
 }
+
+
+@media screen and (max-height: 500px) and (min-width: 2000){
+  #first {
+    height: 20%;
+    width:30%;
+  }
+}
+
+/* @media screen and (max-height: 400px) {
+  #first {
+    height: 20%;
+    width:20%;
+  }
+} */

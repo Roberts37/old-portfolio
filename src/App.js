@@ -11,13 +11,13 @@ import Navigation from './componets/top_menu/top_menu.js';
 import Contact from './componets/contact/contact.js';
 import Footer from './componets/footer/footer.js';
 
-//add project to github
-// fix the photo responiveness when you shorten the screen vertically
+
+// fix the photo responiveness when you shorten the screen vertically - this is mostly done
 // write out project descriptions
 // attach project locations and files
-// finish last project
 // add nodejs to contact
 // prettify the code
+// finish projects
 // deploy on netlify
 
 function App() {
@@ -25,6 +25,8 @@ function App() {
   useEffect(() => {
     document.title = "Hal Roberts"; 
   }, []);
+
+
 
   return (
     
@@ -41,7 +43,7 @@ function App() {
 
 
       
-      <div class='justify-content-center  d-flex flex-column align-items-center ' >
+      <div class='justify-content-center border d-flex flex-column align-items-center ' >
         <div class='justify-content-center  d-flex align-items-center ' id='first'> <Photo /></div>
 
           {/* <div class='col  d-none d-xxl-block' id='second'>
