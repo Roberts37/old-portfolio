@@ -13,9 +13,9 @@ export default function Photo() {
     function handleResize() {
       // Check the screen width and update the footer ID accordingly
       if (window.innerHeight > 768) {
-        setPhotoClass('d-flex flex-column align-items-center border p-4');
+        setPhotoClass('d-flex flex-column align-items-center  p-4');
       } else {
-        setPhotoClass('d-flex align-items-center p-4 justify-content-center border');
+        setPhotoClass('d-flex align-items-center p-4 justify-content-center ');
       }
     }
 

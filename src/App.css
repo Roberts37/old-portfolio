@@ -163,6 +163,15 @@ h5,h4,h3,ul,li,p {
 }
 
 
+@media screen and (max-height: 500px) and (min-width: 1400px){
+  #first {
+    height: 20%;
+    width:30%;
+  }
+}
+
+
+
 
 
 
@@ -240,16 +249,3 @@ h5,h4,h3,ul,li,p {
 }
 
 
-@media screen and (max-height: 500px) and (min-width: 2000){
-  #first {
-    height: 20%;
-    width:30%;
-  }
-}
-
-/* @media screen and (max-height: 400px) {
-  #first {
-    height: 20%;
-    width:20%;
-  }
-} */

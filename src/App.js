@@ -12,7 +12,8 @@ import Contact from './componets/contact/contact.js';
 import Footer from './componets/footer/footer.js';
 
 
-// fix the photo responiveness when you shorten the screen vertically - this is mostly done
+// fix the photo responiveness when you shorten the screen vertically - this is mostly done - try using javascript to make it not display
+// #first if the screen is smaller than 400px. we could use a specific id and useState
 // write out project descriptions
 // attach project locations and files
 // add nodejs to contact
@@ -43,7 +44,7 @@ function App() {
 
 
       
-      <div class='justify-content-center border d-flex flex-column align-items-center ' >
+      <div class='justify-content-center  d-flex flex-column align-items-center ' >
         <div class='justify-content-center  d-flex align-items-center ' id='first'> <Photo /></div>
 
           {/* <div class='col  d-none d-xxl-block' id='second'>
