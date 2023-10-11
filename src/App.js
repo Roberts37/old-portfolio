@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Project from './componets/projects/projects';
@@ -10,10 +10,10 @@ import Photo from './componets/photo/photo';
 import Navigation from './componets/top_menu/top_menu.js';
 import Contact from './componets/contact/contact.js';
 import Footer from './componets/footer/footer.js';
+import favicon from './ai.png';
 
 
-// fix the photo responiveness when you shorten the screen vertically - this is mostly done - try using javascript to make it not display
-// #first if the screen is smaller than 400px. we could use a specific id and useState
+
 // write out project descriptions
 // attach project locations and files
 // add nodejs to contact
@@ -26,6 +26,18 @@ function App() {
   useEffect(() => {
     document.title = "Hal Roberts"; 
   }, []);
+
+  useEffect(() => {
+    // Create a new link element for the favicon
+    const link = document.querySelector("link[rel~='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = favicon;
+
+    // Update the favicon in the document's head
+    document.getElementsByTagName('head')[0].appendChild(link);
+  }, [favicon]);
+
 
 
 
@@ -43,16 +55,11 @@ function App() {
         </div>
 
 
-      
+ 
       <div class='justify-content-center  d-flex flex-column align-items-center ' >
         <div class='justify-content-center  d-flex align-items-center ' id='first'> <Photo /></div>
-
-          {/* <div class='col  d-none d-xxl-block' id='second'>
-
-              <div class='d-flex align-items-center justify-content-center  h-100' > <Flipper/></div> 
-
-          </div> */}
         </div> 
+
 
       </div>
 
