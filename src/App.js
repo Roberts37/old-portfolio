@@ -13,7 +13,7 @@ import Footer from './componets/footer/footer.js';
 import favicon from './ai.png';
 
 
-
+// add a readme to airbnb sandiego on github
 // write out project descriptions
 // attach project locations and files
 // add nodejs to contact
