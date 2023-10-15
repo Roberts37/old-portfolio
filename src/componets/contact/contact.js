@@ -16,7 +16,18 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form data submitted:', formData);
+        // Send the form data to the Node.js server
+        fetch('http://localhost:3001/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data.message);
+            });
     };
 
     return (
@@ -67,8 +78,8 @@ export default function Contact() {
                                     <div className="text-center">
                                         <button
                                             type="submit"
-                                            class='p-2'
-                                            id = 'contact_button'
+                                            className='p-2'
+                                            id='contact_button'
                                         >
                                             Send Message
                                         </button>

@@ -9,6 +9,11 @@ export default function Project() {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       link: 'https://github.com/YourGitHubUsername/TextSummarizationProject',
     },
+    'Computer Viz': {
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      link: 'https://github.com/YourGitHubUsername/TextSummarizationProject',
+    },
     'Stock Prediction LSTM': {
       description:
         'The "Stock Market Price Prediction with LSTM" project is aimed at predicting stock prices by leveraging deep learning techniques. The project involves data collection, preprocessing, model building, and deployment to create a comprehensive solution for traders and investors. It also provides valuable insights into data-driven decision-making and risk management. This project uses Long Short-Term Memory (LSTM) neural networks to predict stock market prices. It provides a deep learning solution to forecast future stock prices based on historical data. By utilizing TensorFlow and LSTM layers, the model captures temporal patterns in time series data, allowing for more informed trading and investment decisions.',
@@ -24,7 +29,7 @@ export default function Project() {
     },
     'Real Estate Investment': {
       description:
-        'The "Real Estate Investment" Analysis project represents a comprehensive financial tool designed to evaluate and optimize real estate investment opportunities. This Excel-based model empowers real estate investors and financial analysts to make data-driven decisions in the dynamic and complex world of real estate.',
+        'The "Real Estate Investment" analysis project represents a comprehensive financial tool designed to evaluate and optimize real estate investment opportunities. This Excel-based model empowers real estate investors and financial analysts to make data-driven decisions in the dynamic and complex world of real estate.',
       download: 'Real Estate Analysis.xlsx',
     },
   };
