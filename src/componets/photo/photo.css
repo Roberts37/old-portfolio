@@ -4,7 +4,6 @@
     width: 50%;
     background: linear-gradient(to bottom, #282c34, #1d2a34);
     border: 1px solid #464b55;
-
 }
 
 @media (max-width: 1400px) {
@@ -14,8 +13,6 @@
     }
 }
 
-
-h5,h3,ul,li,p, h1 {
+h5, h3, ul, li, p, h1 {
     color: #e3e0dc;
-  
-  }
+}

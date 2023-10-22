@@ -3,26 +3,22 @@
 }
 
 #section2 {
-    margin-right:20%;
+    margin-right: 20%;
 }
-
 
 #full_foot {
     background-color: #202021;
 }
 
-
-
-
-#github_icon, #linkedin_icon {
+#github_icon,
+#linkedin_icon {
     height: 40px;
     width: 40px;
-
 }
 
-#github_icon:hover, #linkedin_icon:hover {
+#github_icon:hover,
+#linkedin_icon:hover {
     height: 50px;
     width: 50px;
     box-shadow: 0px 0px 15px #565d6d;
 }
-

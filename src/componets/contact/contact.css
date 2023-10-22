@@ -1,36 +1,30 @@
 #c {
     background-color: #202021;
     box-shadow: 0px 0px 10px #565d6d;
-  }
-
+}
 
 #contact {
     background-color: #333842;
-
 }
-
 
 #contact_button {
     background-color: #202021;
     color: white;
     border-radius: 2em;
     background-image: linear-gradient(180deg, #202021, #6f7277);
-    border:1px solid #202021;
+    border: 1px solid #202021;
     box-shadow: 0px 0px 13px #202021;
 }
 
-
-#contact_button:hover{
-    background-image:linear-gradient(#474e5f,#9a9fa8) ;
+#contact_button:hover {
+    background-image: linear-gradient(#474e5f, #9a9fa8);
     box-shadow: 10px 10px 10px #202021;
-
 }
 
 .form-control {
     background-color: #282c34;
     color: white;
     border-color: #202021;
-    
 }
 
 .form-control:focus {

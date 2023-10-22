@@ -4,6 +4,7 @@ import './projects.css';
 
 export default function Project() {
   const projectData = {
+      // Define project data with descriptions and links
     'Text Summarization': {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -27,64 +28,57 @@ export default function Project() {
       description: 'The "Airbnb - San Diego" data science project is a comprehensive data science endeavor focused on Airbnb property investments within the city of San Diego. This project encompasses data collection, extensive data cleaning, and a meticulous analysis to unveil valuable insights for potential Airbnb hosts and property investors. The objective is to identify prime locations in San Diego where setting up an Airbnb property can yield the highest gross income. By leveraging data-driven decision-making and in-depth statistical analysis, this project assists investors in making informed choices for their real estate ventures.',
       link: 'https://github.com/Roberts37/AirBNB-San-Diego',
     },
-    'Real Estate Investment': {
-      description:
-        'The "Real Estate Investment" analysis project represents a comprehensive financial tool designed to evaluate and optimize real estate investment opportunities. This Excel-based model empowers real estate investors and financial analysts to make data-driven decisions in the dynamic and complex world of real estate.',
-      download: 'Real Estate Analysis.xlsx',
-    },
+    // 'Real Estate Investment': {
+    //   description:
+    //     'The "Real Estate Investment" analysis project represents a comprehensive financial tool designed to evaluate and optimize real estate investment opportunities. This Excel-based model empowers real estate investors and financial analysts to make data-driven decisions in the dynamic and complex world of real estate.',
+    //   download: 'Real Estate Analysis.xlsx',
+    // },
   };
 
-  const [activeProject, setActiveProject] = useState(null);
+ // State to track the active project
+ const [activeProject, setActiveProject] = useState(null);
 
-  const handleProjectClick = (name) => {
-    setActiveProject(name);
-  };
+ // Handle click on a project to set it as active
+ const handleProjectClick = (name) => {
+   setActiveProject(name);
+ };
 
-  return (
-    <div className="p-3 rounded" id="full">
-      <h3 className="text-center">Projects</h3>
-      <br />
-      <div>
-        <ul className="nav flex-row justify-content-center">
-          {Object.keys(projectData).map((name) => (
-            <ProjectList key={name} name={name} onClick={() => handleProjectClick(name)} />
-          ))}
-        </ul>
-      </div>
-      <div className="rounded p-2 m-2" id="project_desc">
-        {activeProject ? (
-          <div>
-            <p id='descriptions'>{projectData[activeProject].description}&nbsp;
-              {activeProject === 'Real Estate Investment' ? (
-                <a
-                  href={projectData[activeProject].download}
-                  download
-                >
-                  Download Project
-                </a>
-              ) : (
-                <a
-                  href={projectData[activeProject].link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub Repository
-                </a>
-              )}
-            </p>
-          </div>
-        ) : (
-          <p>Select a project to begin.</p>
-        )}
-      </div>
-    </div>
-  );
+ return (
+   <div className="p-3 rounded" id="full">
+     <h3 className="text-center">Projects</h3>
+     <br />
+     <div>
+       <ul className="nav flex-row justify-content-center">
+         {Object.keys(projectData).map((name) => (
+           <ProjectList key={name} name={name} onClick={() => handleProjectClick(name)} />
+         ))}
+       </ul>
+     </div>
+     <div className="rounded p-2 m-2" id="project_desc">
+       {activeProject ? (
+         <div>
+           <p id='descriptions'>{projectData[activeProject].description}&nbsp;
+             <a
+               href={projectData[activeProject].link}
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               GitHub Repository
+             </a>
+           </p>
+         </div>
+       ) : (
+         <p>Select a project to begin.</p>
+       )}
+     </div>
+   </div>
+ );
 }
 
 function ProjectList({ name, onClick }) {
-  return (
-    <button className="m-2 p-2" onClick={onClick}>
-      {name}
-    </button>
-  );
+ return (
+   <button className="m-2 p-2" onClick={onClick}>
+     {name}
+   </button>
+ );
 }

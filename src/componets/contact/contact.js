@@ -3,17 +3,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './contact.css';
 
 export default function Contact() {
+    // State to store form data
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: '',
     });
 
+    // State to display submission message
+    const [submissionMessage, setSubmissionMessage] = useState('');
+
+    // Function to handle changes in form input fields
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
+    // Function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
         // Send the form data to the Node.js server
@@ -27,6 +33,14 @@ export default function Contact() {
             .then((response) => response.json())
             .then((data) => {
                 console.log(data.message);
+                setSubmissionMessage('Form submitted successfully'); // Update the submission message
+                
+                // Clear the form fields after submission
+                setFormData({
+                    name: '',
+                    email: '',
+                    message: '',
+                });
             });
     };
 
@@ -39,6 +53,7 @@ export default function Contact() {
                             <div className="card-body">
                                 <h3 className="text-center mb-4">Contact Me</h3>
                                 <form onSubmit={handleSubmit}>
+                                    {/* Form input for name */}
                                     <div className="mb-3">
                                         <input
                                             type="text"
@@ -51,6 +66,7 @@ export default function Contact() {
                                             required
                                         />
                                     </div>
+                                    {/* Form input for email */}
                                     <div className="mb-3 ">
                                         <input
                                             type="email"
@@ -63,6 +79,7 @@ export default function Contact() {
                                             required
                                         />
                                     </div>
+                                    {/* Form input for message */}
                                     <div className="mb-3">
                                         <textarea
                                             className="form-control"
@@ -75,6 +92,7 @@ export default function Contact() {
                                             required
                                         />
                                     </div>
+                                    {/* Submit button */}
                                     <div className="text-center">
                                         <button
                                             type="submit"
@@ -85,6 +103,8 @@ export default function Contact() {
                                         </button>
                                     </div>
                                 </form>
+                                {/* Display submission message */}
+                                {submissionMessage && <p className="text-success text-center">{submissionMessage}</p>}
                             </div>
                         </div>
                     </div>

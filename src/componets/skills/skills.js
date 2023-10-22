@@ -1,78 +1,74 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import python from './icons/python.png'
-import react from './icons/reacty.png'
-import tensorflow from './icons/tensorflow.png'
-import pandas from './icons/pandas.png'
-import numpy from './icons/numpy.png'
-import sci from './icons/scikitlearn.png'
-import git from './icons/github.png'
-import django from './icons/django.png'
-import flask from './icons/flask.png'
-import sql from './icons/sql.png'
-import r from './icons/r.png'
-import tidy from './icons/tidyverse.png'
-import html from './icons/html.png'
-import css from './icons/css.png'
-import bootstrap from './icons/bootstrap.png'
-import php from './icons/php.png'
-import java from './icons/java.png'
-import jupyter from './icons/jupyter.png'
-import aws from './icons/aws.png'
-import sage from './icons/sage.png'
-import tableau from './icons/tableau.png'
-import bi from './icons/bi.png'
-import soup from './icons/soup.png'
-import node from './icons/node.png'
-import adobe from './icons/adobe.png'
-import mongo from './icons/mongo.png'
-import './skills.css'
+import pythonIcon from './icons/python.png';
+import reactIcon from './icons/reacty.png';
+import tensorflowIcon from './icons/tensorflow.png';
+import pandasIcon from './icons/pandas.png';
+import numpyIcon from './icons/numpy.png';
+import sciIcon from './icons/scikitlearn.png';
+import gitIcon from './icons/github.png';
+import djangoIcon from './icons/django.png';
+import flaskIcon from './icons/flask.png';
+import sqlIcon from './icons/sql.png';
+import rIcon from './icons/r.png';
+import tidyIcon from './icons/tidyverse.png';
+import htmlIcon from './icons/html.png';
+import cssIcon from './icons/css.png';
+import bootstrapIcon from './icons/bootstrap.png';
+import phpIcon from './icons/php.png';
+import javaIcon from './icons/java.png';
+import jupyterIcon from './icons/jupyter.png';
+import awsIcon from './icons/aws.png';
+import sageIcon from './icons/sage.png';
+import tableauIcon from './icons/tableau.png';
+import biIcon from './icons/bi.png';
+import soupIcon from './icons/soup.png';
+import nodeIcon from './icons/node.png';
+import adobeIcon from './icons/adobe.png';
+import mongoIcon from './icons/mongo.png';
+import './skills.css';
 
 export default function Skills() {
-
-
     return (
-        <div id='b' class='rounded'>
-            <h3 class='text-center p-2'>Skills</h3>
-            <div class='pb-3 d-flex flex-wrap flex-row justify-content-center'>
-            <Icon name={python} desc='Python'/>
-            <Icon name={tensorflow} desc='Tensorflow'/>
-            <Icon name={sql} desc='SQL' /> 
-            <Icon name={mongo} desc='MongoDB'/>
-            <Icon name={pandas} desc='Pandas'/>
-            <Icon name={numpy} desc='Numpy'/>
-            <Icon name={sci} desc='Sci-Kit Learn'/>
-            <Icon name={django} desc='Django'/>
-            <Icon name={flask} desc='Flask'/>
-            <Icon name={soup} desc='Beautiful Soup'/>
-            <Icon name={git} desc='Git Hub'/>
-            <Icon name ={jupyter} desc='Jupyterlab'/>
-            <Icon name={tableau} desc='Tableau'/>
-            <Icon name={bi} desc='Power BI'/>
-            <Icon name={adobe} desc='Adobe Cloud'/>
-            <Icon name={php} desc='PHP'/>
-            <Icon name={r} desc='R'/>
-            <Icon name={tidy} desc='Tidyverse'/>
-            <Icon name={aws} desc='AWS'/>
-            <Icon name={sage} desc='SageMaker'/>
-            <Icon name={html} desc='HTML'/>
-            <Icon name={css} desc='CSS'/>
-            <Icon name={bootstrap} desc='Bootstrap'/>
-            <Icon name={java} desc='Javascript'/>
-            <Icon name={react} desc='React'/>
-            <Icon name={node} desc='Node.js'/>
+        <div id='b' className='rounded'>
+            <h3 className='text-center p-2'>Skills</h3>
+            <div className='pb-3 d-flex flex-wrap flex-row justify-content-center'>
+                <Icon name={pythonIcon} desc='Python' />
+                <Icon name={tensorflowIcon} desc='Tensorflow' />
+                <Icon name={sqlIcon} desc='SQL' />
+                <Icon name={mongoIcon} desc='MongoDB' />
+                <Icon name={pandasIcon} desc='Pandas' />
+                <Icon name={numpyIcon} desc='Numpy' />
+                <Icon name={sciIcon} desc='Sci-Kit Learn' />
+                <Icon name={djangoIcon} desc='Django' />
+                <Icon name={flaskIcon} desc='Flask' />
+                <Icon name={soupIcon} desc='Beautiful Soup' />
+                <Icon name={gitIcon} desc='Git Hub' />
+                <Icon name={jupyterIcon} desc='Jupyterlab' />
+                <Icon name={tableauIcon} desc='Tableau' />
+                <Icon name={biIcon} desc='Power BI' />
+                <Icon name={adobeIcon} desc='Adobe Cloud' />
+                <Icon name={phpIcon} desc='PHP' />
+                <Icon name={rIcon} desc='R' />
+                <Icon name={tidyIcon} desc='Tidyverse' />
+                <Icon name={awsIcon} desc='AWS' />
+                <Icon name={sageIcon} desc='SageMaker' />
+                <Icon name={htmlIcon} desc='HTML' />
+                <Icon name={cssIcon} desc='CSS' />
+                <Icon name={bootstrapIcon} desc='Bootstrap' />
+                <Icon name={javaIcon} desc='Javascript' />
+                <Icon name={reactIcon} desc='React' />
+                <Icon name={nodeIcon} desc='Node.js' />
             </div>
-
-
         </div>
-    )
+    );
 }
 
-function Icon ({name, desc}) {
+function Icon({ name, desc }) {
     return (
-        <div class='p-2 justify-content-center'>
-            <img class =' p-1 justify-content-center' id='image-icon' src={name}/>
-            <p class='text-center'>{desc}</p>
+        <div className='p-2 justify-content-center'>
+            <img className='p-1 justify-content-center' id='image-icon' src={name} alt={desc} />
+            <p className='text-center'>{desc}</p>
         </div>
-    )   
+    );
 }
