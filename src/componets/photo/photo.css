@@ -6,6 +6,14 @@
     border: 1px solid #464b55;
 }
 
+#hal2 {
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    background: linear-gradient(to bottom, #282c34, #1d2a34);
+    border: 1px solid #464b55;
+}
+
 @media (max-width: 1400px) {
     #hal {
         height: 30%;

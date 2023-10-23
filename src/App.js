@@ -12,10 +12,11 @@ import Footer from './componets/footer/footer.js';
 import favicon from './ai.png';
 
 
-// optimize for mobile, set it so that the photo is on top of the letters and the photo is bigger
 // set up an email account for this project specifically
 // finish projects
 // deploy on netlify
+// change the paths on the backend and contact sections
+
 
 function App() {
 

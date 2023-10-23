@@ -7,20 +7,27 @@ export default function Photo() {
   // State variables for controlling the CSS classes and screen height
   const [photoClass, setPhotoClass] = useState('p-3 row');
   const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     // Function to handle window resize events
     function handleResize() {
       // Check the screen height and update the CSS class accordingly
       setScreenHeight(window.innerHeight);
+      setScreenWidth(window.innerWidth);
+
 
       if (window.innerHeight > 768) {
         setPhotoClass('d-flex flex-column align-items-center p-4');
       } else {
         setPhotoClass('d-flex align-items-center p-4 justify-content-center');
       }
-    }
+    
 
+      if (window.innerWidth < 700) {
+        setPhotoClass('d-flex flex-column align-items-center p-4');
+      }
+    }
     // Add a listener for window resize events
     window.addEventListener('resize', handleResize);
 
@@ -37,7 +44,7 @@ export default function Photo() {
     <div class={photoClass}>
       {/* Display the image based on screen height */}
       {screenHeight >= 430 ? (
-        <img class='' id='hal' alt='hal' src={hal} />
+        <img class='' id={screenWidth >= 500 ? 'hal' : 'hal2'} alt='hal' src={hal} />
       ) : null}
       <div class='p-3'>
         <h1 class='text-center mb-3'>Hal Roberts</h1>

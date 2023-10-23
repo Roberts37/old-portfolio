@@ -10,7 +10,7 @@ export default function Qual() {
             </div>
             <div id='large' className='d-flex flex-column justify-content-center'>
                 <div className='row justify-content-center' id='divider'>
-                    <div className='col-5 mr-2' id='data'>
+                    <div className='col-md-5 col-10 mb-3 m-2 rounded' id='data'>
                         <h4 className='m-auto text-center border-bottom p-2 pb-3'>Data</h4>
                         <div className='m-2'>
                             <ul>
@@ -31,7 +31,7 @@ export default function Qual() {
                             </ul>
                         </div>
                     </div>
-                    <div className='col-5'>
+                    <div className='col-md-5 col-10 mb-3 rounded m-2' id='data'>
                         <h4 className='m-auto text-center border-bottom p-2 pb-3'>Machine Learning</h4>
                         <div className='m-2'>
                             <ul>
@@ -61,7 +61,7 @@ export default function Qual() {
                     </div>
                 </div>
                 <div className='row justify-content-center' id='divider'>
-                    <div className='col-5 mr-2' id='data'>
+                    <div className='col-md-5 col-10 mb-3 rounded m-2' id='data'>
                         <h4 className='m-auto text-center border-bottom p-2 pb-3'>Development</h4>
                         <div className='m-2'>
                             <ul>
@@ -72,7 +72,7 @@ export default function Qual() {
                                         rel="noopener noreferrer">
                                         Front End Development
                                     </a>
-                                    </li>
+                                </li>
                                 <li>
                                     <a
                                         href='https://coursera.org/share/842f4c4bce39f57248aff6c61672f67b'
@@ -84,7 +84,7 @@ export default function Qual() {
                             </ul>
                         </div>
                     </div>
-                    <div className='col-5 mb-3'>
+                    <div className='col-md-5 col-10 mb-3 rounded m-2' id='data'>
                         <h4 className='m-auto text-center border-bottom p-2 pb-3'>Experience</h4>
                         <div className='m-2'>
                             <ul>

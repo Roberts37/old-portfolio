@@ -7,14 +7,14 @@ export default function About() {
         <div id='layout' className='rounded'>
             <h3 className='text-center p-2'>About Me</h3>
             <p id='about' className='p-5 pb-0 pt-2'>
-                I'm originally from Driggs, Idaho, and I graduated from Utah State 
+                I graduated from Utah State 
                 University with a degree in wealth management. During my time at USU, 
                 I started an e-commerce business called FortuneFavorites, which sparked
                 my passion for working with data.
             </p>
             <p id='about' className='p-5 pb-0 pt-0'>
                 I then pursued a data analytics program at Bridgerland Technical College,
-                after which I delved into data science, data engineering, and machine learning through 
+                after which I delved into data science, machine learning, and software engineering through 
                 various online programs. Machine learning and AI have become my primary focus, 
                 and I'm excited to be part of shaping the future.
             </p>

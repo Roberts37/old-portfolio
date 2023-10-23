@@ -66,7 +66,7 @@ export default function Skills() {
 
 function Icon({ name, desc }) {
     return (
-        <div className='p-2 justify-content-center'>
+        <div className='p-2 d-flex flex-column align-items-center'>
             <img className='p-1 justify-content-center' id='image-icon' src={name} alt={desc} />
             <p className='text-center'>{desc}</p>
         </div>
