@@ -12,7 +12,8 @@ import Footer from './componets/footer/footer.js';
 import favicon from './ai.png';
 
 
-// optimize on a mobile device somehow or check if we can view it on mobile
+// optimize for mobile, set it so that the photo is on top of the letters and the photo is bigger
+// set up an email account for this project specifically
 // finish projects
 // deploy on netlify
 
