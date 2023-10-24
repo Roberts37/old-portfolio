@@ -12,7 +12,6 @@ import Footer from './componets/footer/footer.js';
 import favicon from './ai.png';
 
 
-// set up an email account for this project specifically
 // finish projects
 // deploy on netlify
 // change the paths on the backend and contact sections
