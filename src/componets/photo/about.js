@@ -22,7 +22,7 @@ export default function About() {
                 In addition to my data-driven pursuits, I've ventured into the realms of both 
                 front-end and back-end development. Along the way, I've crafted financial trading
                 bots and brought numerous projects to fruition, this portfolio being one of them.
-                I am dedicated to using data and technology to drive innovation.
+                I am dedicated to using data and technology to drive innovation. hello
             </p>
         </div>
     );
