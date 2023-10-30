@@ -27,8 +27,8 @@ export default function Qual() {
                                         Data Scientist
                                     </a>
                                 </li>
-                                <li>Data Engineering</li>
-                                <li>Data Science on AWS Cloud</li>
+                                {/* <li>Data Engineering</li>
+                                <li>Data Science on AWS Cloud</li> */}
                             </ul>
                         </div>
                     </div>
@@ -54,9 +54,9 @@ export default function Qual() {
                                         Machine Learning
                                     </a>
                                 </li>
-                                <li>Natural Language Processing</li>
+                                {/* <li>Natural Language Processing</li>
                                 <li>Machine Learning Engineering for Production</li>
-                                <li>Reinforcement Learning</li>
+                                <li>Reinforcement Learning</li> */}
                             </ul>
                         </div>
                     </div>
