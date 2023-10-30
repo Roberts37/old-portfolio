@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './App.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Project from './componets/projects/projects';
@@ -9,7 +9,7 @@ import Photo from './componets/photo/photo';
 import Navigation from './componets/top_menu/top_menu.js';
 import Contact from './componets/contact/contact.js';
 import Footer from './componets/footer/footer.js';
-import favicon from './ai.png';
+// import favicon from './ai.png';
 
 
 // finish projects
