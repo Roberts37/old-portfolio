@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Project from './componets/projects/projects';
@@ -19,17 +19,19 @@ import favicon from './ai.png';
 
 function App() {
 
-  useEffect(() => {
-    document.title = "Hal Roberts"; 
-  }, []);
+  const [favicon, setFavicon] = useState('/path-to-default-favicon.ico');
 
+  useEffect(() => {
+    document.title = "Hal Roberts";
+  }, []);
+  
   useEffect(() => {
     // Create a new link element for the favicon
     const link = document.querySelector("link[rel~='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'shortcut icon';
     link.href = favicon;
-
+  
     // Update the favicon in the document's head
     document.getElementsByTagName('head')[0].appendChild(link);
   }, [favicon]);
