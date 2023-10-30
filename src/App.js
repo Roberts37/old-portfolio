@@ -28,7 +28,7 @@ function App() {
     const link = document.querySelector("link[rel~='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'shortcut icon';
-    link.href = '/path-to-default-favicon.ico'; // Provide the path to the default favicon
+    link.href = 'ai.png'; // Provide the path to the default favicon
   
     // Update the favicon in the document's head
     document.getElementsByTagName('head')[0].appendChild(link);
