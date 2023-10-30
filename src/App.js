@@ -19,8 +19,6 @@ import favicon from './ai.png';
 
 function App() {
 
-  const [favicon, setFavicon] = useState('/path-to-default-favicon.ico');
-
   useEffect(() => {
     document.title = "Hal Roberts";
   }, []);
@@ -30,12 +28,12 @@ function App() {
     const link = document.querySelector("link[rel~='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'shortcut icon';
-    link.href = favicon;
+    link.href = '/path-to-default-favicon.ico'; // Provide the path to the default favicon
   
     // Update the favicon in the document's head
     document.getElementsByTagName('head')[0].appendChild(link);
-  }, [favicon]);
-
+  }, []);
+  
 
 
 
