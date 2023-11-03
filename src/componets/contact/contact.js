@@ -21,27 +21,41 @@ export default function Contact() {
 
     // Function to handle form submission
     const handleSubmit = (e) => {
-        e.preventDefault();
-        // Send the form data to the Node.js server
-        fetch('http://localhost:3001/send-email', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                console.log(data.message);
-                setSubmissionMessage('Form submitted successfully'); // Update the submission message
+        // e.preventDefault();
+        // // Send the form data to the Node.js server
+        // fetch('http://localhost:3001/send-email', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(formData),
+        // })
+        //     .then((response) => response.json())
+        //     .then((data) => {
+        //         console.log(data.message);
+        //         setSubmissionMessage('Form submitted successfully'); // Update the submission message
                 
-                // Clear the form fields after submission
-                setFormData({
-                    name: '',
-                    email: '',
-                    message: '',
-                });
-            });
+        //         // Clear the form fields after submission
+        //         setFormData({
+        //             name: '',
+        //             email: '',
+        //             message: '',
+        //         });
+        //     });
+        e.preventDefault();
+
+        // Simulate a delay of 2 seconds (2000 milliseconds)
+        setTimeout(() => {
+            setSubmissionMessage('Form submitted successfully'); // Update the submission message
+        }, 2000);
+        
+        // Clear the form fields after submission
+        setFormData({
+            name: '',
+            email: '',
+            message: '',
+        });
+
     };
 
     return (

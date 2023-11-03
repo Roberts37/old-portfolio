@@ -70,7 +70,7 @@ export default function Footer() {
           This page was created end to end by Hal Roberts using React, powered by Node.js and hosted on Netlify.
           <br />
           <br />
-          © Hal Roberts 2023 All Rights Reserved.
+          © 2023 Hal Roberts. All Rights Reserved.
         </p>
       </section>
       <section className="col justify-content-center d-flex p-3" id="section2">
