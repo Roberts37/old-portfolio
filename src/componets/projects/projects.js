@@ -5,17 +5,17 @@ import './projects.css';
 export default function Project() {
   const projectData = {
       // Define project data with descriptions and links
-    // 'Text Summarization': {
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    //   link: 'https://github.com/YourGitHubUsername/TextSummarizationProject',
-    // },
+    'Text Sentiment': {
+      description:
+        'The "Yelp Sentiment Analysis with BERT" project explores sentiment analysis on Yelp reviews, harnessing the power of BERT, a cutting-edge transformer-based model. The journey involves web scraping for review data, applying BERT\'s advanced natural language processing for sentiment analysis, and using pandas to manage the results. This project showcases a blend of web scraping, machine learning, and data manipulation skills, offering insights into customer sentiments for businesses on Yelp.',
+      link: 'https://github.com/Roberts37/sentiment-analysis',
+    },
     'Face Detection': {
       description:
         'The "Face Detection and Object Localization" project leverages deep learning to create an advanced system for real-time face tracking and object localization. It involves data collection, custom model design, and training for precise results. This project empowers us to make informed decisions in computer vision, robotics, and surveillance by using neural networks.',
       link: 'https://github.com/Roberts37/face-detection-computer_viz',
     },
-    'Stock Prediction LSTM': {
+    'Stock Prediction': {
       description:
         'The "Stock Market Price Prediction with LSTM" project is aimed at predicting stock prices by leveraging deep learning techniques. The project involves data collection, preprocessing, model building, and deployment to create a comprehensive solution for traders and investors. It also provides valuable insights into data-driven decision-making and risk management. This project uses Long Short-Term Memory (LSTM) neural networks to predict stock market prices. It provides a deep learning solution to forecast future stock prices based on historical data. By utilizing TensorFlow and LSTM layers, the model captures temporal patterns in time series data, allowing for more informed trading and investment decisions.',
       link: 'https://github.com/Roberts37/Stock-Price-Prediction',
