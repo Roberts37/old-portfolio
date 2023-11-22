@@ -10,12 +10,12 @@ import gitIcon from './icons/github.png';
 import djangoIcon from './icons/django.png';
 import flaskIcon from './icons/flask.png';
 import sqlIcon from './icons/sql.png';
-import rIcon from './icons/r.png';
-import tidyIcon from './icons/tidyverse.png';
+import kafka from './icons/kafka.png';
+import spark from './icons/spark.png';
 import htmlIcon from './icons/html.png';
 import cssIcon from './icons/css.png';
 import bootstrapIcon from './icons/bootstrap.png';
-import phpIcon from './icons/php.png';
+import hadoop from './icons/hadoop.png';
 import javaIcon from './icons/java.png';
 import jupyterIcon from './icons/jupyter.png';
 import awsIcon from './icons/aws.png';
@@ -26,6 +26,7 @@ import soupIcon from './icons/soup.png';
 import nodeIcon from './icons/node.png';
 import adobeIcon from './icons/adobe.png';
 import mongoIcon from './icons/mongo.png';
+
 import './skills.css';
 
 export default function Skills() {
@@ -48,9 +49,9 @@ export default function Skills() {
                 <Icon name={tableauIcon} desc='Tableau' />
                 <Icon name={biIcon} desc='Power BI' />
                 <Icon name={adobeIcon} desc='Adobe Cloud' />
-                <Icon name={phpIcon} desc='PHP' />
-                <Icon name={rIcon} desc='R' />
-                <Icon name={tidyIcon} desc='Tidyverse' />
+                <Icon name={hadoop} desc='Hadoop' />
+                <Icon name={kafka} desc='Kafka' />
+                <Icon name={spark} desc='Spark' />
                 <Icon name={awsIcon} desc='AWS' />
                 <Icon name={sageIcon} desc='SageMaker' />
                 <Icon name={htmlIcon} desc='HTML' />

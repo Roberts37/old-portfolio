@@ -10,6 +10,11 @@ export default function Project() {
         'The "Yelp Sentiment Analysis with BERT" project explores sentiment analysis on Yelp reviews, harnessing the power of BERT, a cutting-edge transformer-based model. The journey involves web scraping for review data, applying BERT\'s advanced natural language processing for sentiment analysis, and using pandas to manage the results. This project showcases a blend of web scraping, machine learning, and data manipulation skills, offering insights into customer sentiments for businesses on Yelp.',
       link: 'https://github.com/Roberts37/sentiment-analysis',
     },
+    'Text Summarization': {
+      description:
+      'The "Text Summarization from Medium Articles" project delves into the realm of web scraping, natural language processing (NLP), and data analysis to distill meaningful insights from Medium articles. Leveraging a curated list of topics, the project extracts key information using web scraping techniques, employs the Hugging Face transformers library to create a robust text summarization pipeline, and utilizes Pandas for effective data management.',
+      link: 'https://github.com/Roberts37/text-summarization'
+    },
     'Face Detection': {
       description:
         'The "Face Detection and Object Localization" project leverages deep learning to create an advanced system for real-time face tracking and object localization. It involves data collection, custom model design, and training for precise results. This project empowers us to make informed decisions in computer vision, robotics, and surveillance by using neural networks.',
