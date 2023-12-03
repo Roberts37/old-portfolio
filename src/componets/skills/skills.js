@@ -26,6 +26,7 @@ import soupIcon from './icons/soup.png';
 import nodeIcon from './icons/node.png';
 import adobeIcon from './icons/adobe.png';
 import mongoIcon from './icons/mongo.png';
+import airflow from './icons/airflow.png';
 
 import './skills.css';
 
@@ -52,6 +53,7 @@ export default function Skills() {
                 <Icon name={hadoop} desc='Hadoop' />
                 <Icon name={kafka} desc='Kafka' />
                 <Icon name={spark} desc='Spark' />
+                <Icon name={airflow} desc='Airflow'/>
                 <Icon name={awsIcon} desc='AWS' />
                 <Icon name={sageIcon} desc='SageMaker' />
                 <Icon name={htmlIcon} desc='HTML' />
